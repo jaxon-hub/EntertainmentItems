@@ -10,3 +10,4 @@ a = requests.get(url)
 print(a.json()["data"]["forecast"])
 # https://dev.heweather.com/docs/api/weather
 # https://www.seniverse.com/pricing
+# https://github.com/heweather/LocationList
