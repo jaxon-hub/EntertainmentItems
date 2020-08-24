@@ -4,7 +4,7 @@
 """
 import os
 
-import requests
+# import requests
 
 
 name = os.getenv("city")
