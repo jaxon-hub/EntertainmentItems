@@ -8,7 +8,6 @@ import requests
 
 
 name = os.getenv("city")
-## 和风
 url = f"https://geoapi.heweather.net/v2/city/lookup?location={name}&key=d49a4c5afadc47b9b5fc70e4ae7beefa&range=cn"
 a = requests.get(url)
 # print(a.content)
