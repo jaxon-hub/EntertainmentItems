@@ -4,18 +4,18 @@
 """
 import os
 
-# import requests
+import requests
 
 
 name = os.getenv("city")
 print(name,"11111111")
-# url = f"https://geoapi.heweather.net/v2/city/lookup?location={name}&key=d49a4c5afadc47b9b5fc70e4ae7beefa&range=cn"
-# a = requests.get(url)
-# # print(a.content)
-# citycode = a.json()["location"][0]["id"]
-# weather_url = f"http://wthrcdn.etouch.cn/weather_mini?citykey={citycode}"
-# b = requests.get(weather_url)
-# print(b.json())
+url = f"https://geoapi.heweather.net/v2/city/lookup?location={name}&key=d49a4c5afadc47b9b5fc70e4ae7beefa&range=cn"
+a = requests.get(url)
+# print(a.content)
+citycode = a.json()["location"][0]["id"]
+weather_url = f"http://wthrcdn.etouch.cn/weather_mini?citykey={citycode}"
+b = requests.get(weather_url)
+print(b.json())
 # https://dev.heweather.com/docs/api/weather
 # https://www.seniverse.com/pricing
 # https://github.com/heweather/LocationList
