@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 """
 @Time    : 2020/8/19 0019 23:05
 @Author  : jaxon
@@ -16,7 +17,4 @@ citycode = a.json()["location"][0]["id"]
 weather_url = f"http://wthrcdn.etouch.cn/weather_mini?citykey={citycode}"
 b = requests.get(weather_url)
 print(b.json())
-# https://dev.heweather.com/docs/api/weather
-# https://www.seniverse.com/pricing
-# https://github.com/heweather/LocationList
 
