@@ -17,8 +17,8 @@ r_data = requests.get(weather_url).json()
 city = r_data["data"]["city"]
 ganmao = r_data["data"]["ganmao"]
 weather_data = (r_data["data"]["forecast"])
-cday = datetime.datetime.strptime('2018-9-19 18:19:59', '%Y-%m-%d %H:%M:%S')
-print(f"---------------------------当前时间为:{cday}---------------------------")
+nowTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+print(f"---------------------------当前时间为:{nowTime}---------------------------")
 print("|")
 for data in weather_data:
     date = data["date"]
